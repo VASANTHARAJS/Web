@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Orches.com/SignUp</title>
+<link rel="stylesheet" type="text/css" href="SignUpDesign.css">
+</head>
+<script>
+function passwordcheck(){
+	var x = document.getElementById("password").value;
+	var t =document.getElementById("conformpassword").value;
+	if(x!=t){
+		alert("PASS no match");
+		return false;
+	}
+}
+</script>
+<style>
+
+@charset "ISO-8859-1";
+input{
+	font-size:16px;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid red;
+}
+body{
+	font-size:16px;
+}
+div{
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	overflow:hidden;
+}
+.logo{
+	background-color: white;
+	height:80px;
+	width:80px;
+}
+.signoutbox{
+	padding: 10px 20px;
+}
+fieldset {
+	border:1px solid #999;
+	border-radius:8px;
+	box-shadow:0 0 10px #999;
+	width:max-content;
+}
+.rightallign{
+	float:right;
+}
+td{ 
+padding: 10px;
+}
+a{
+	text-decoration: none;
+}
+button{
+  background-color: #00ccff; 
+  padding: 7px 15px;
+  border: none;
+  color: white;
+  size: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+</style>
+<body>
+<main>
+<div>
+
+<div>
+<center>
+<br><br>
+<form action="#" >
+<fieldset >
+<center><div Style="padding: 0px 85px;"><a href="#"> <img class="logo" src="https://www.designfreelogoonline.com/wp-content/uploads/2018/03/00305-create-a-logo-music-04.png" alt="Orches.com"></a></div></center>
+<div Style="padding:10px 0px;">
+<table>
+<tr>
+<td>FirstName</td>
+<td><input type="text" id="fname" name="fname" required></td>
+</tr>
+<tr>
+<td>LastName</td>
+<td><input type="text" id="lname" name="lname" required></td>
+</tr>
+<tr>
+<td>MailId</td>
+<td><input type="text" id="mailid" name="mailid" required></td>
+</tr>
+<tr>
+<td>ContactNumber</td>
+<td><input type="text" id="number" name="number" required></td>
+</tr>
+<tr>
+<td>Password</td>
+<td><input type="password" id="password" name="password" required></td>
+</tr>
+<tr>
+<td>ConformPassword</td>
+<td><input type="password" id="conformpassword" name="conformpassword" required></td>
+</tr>
+</table>
+
+</div>
+<div Style="padding: 10px 0px">
+<center><div ><button name="Submit" value="Submit" onclick="return passwordcheck()">SignUp</button></div></center>
+</div>
+</fieldset>
+
+</form>
+</center>
+</div>
+<center>
+<p>Already have an account !</p>
+<a href="#">Click here to signIn</a>
+
+</center>
+</div>
+</main>
+</body>
+</html>
